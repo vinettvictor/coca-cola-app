@@ -1,0 +1,11 @@
+<form (submit)="insertar()">
+    <label for="" class="col-sm-2 col-form-label">Email</label>
+    <input id="email" [(ngModel)]="email" type="email" class="form-control" placeholder="nombre@ejemplo.com" name="email"><br>
+    <p>{{email}}</p>
+    <label for="" class="col-sm-2 col-form-label">Password</label>
+    <input type="password" [(ngModel)]="password" class="form-control" name="password"><br>
+    <p>{{password}}</p>
+
+    <button id="validate" type="submit" class="btn btn-outline-danger">Ingresar</button>
+    <a type="button" class="btn btn-outline-success" routerLink="/registro">Registrarse</a>
+</form>

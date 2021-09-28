@@ -1,0 +1,32 @@
+<form (submit)="registro()">
+    <div class="input-group input-group-lg">
+        <input type="text" [(ngModel)]="nombre" class="form-control mb-3 mr-2 form-control-lg" placeholder="Ingrese su Nombre" name="nombre">
+    </div><br>
+    <p>{{nombre}}</p>
+    <p style="color: red">{{errNombre}}</p>
+
+    <div>
+        <input type="text" [(ngModel)]="apellido" class="form-control mb-3 ml-2 form-control-lg" placeholder="Ingrese su Apellido" name="apellido">
+    </div><br>
+    <p>{{apellido}}</p>
+    <p style="color: red">{{errApellido}}</p>
+
+    <div class="input-group input-group-lg">
+        <input type="email" [(ngModel)]="email" class="form-control mb-3 mr-2 form-control-lg" placeholder="Ingrese su Email" name="email">
+    </div><br>
+    <p>{{email}}</p>
+
+    <div class="input-group input-group-lg">
+        <input type="password" [(ngModel)]="password" class="form-control mb-3 mr-2 form-control-lg" placeholder="Ingrese password" name="password">
+    </div>
+    <p>{{password}}</p>
+    <p style="color: red">{{errPassword}}</p>
+
+    <div class="input-group input-group-lg">
+        <input type="password" [(ngModel)]="confirmPassword" class="form-control mb-3 mr-2 form-control-lg" placeholder="Confirme su password" name="passwordConfirmation">
+    </div>
+    <p>{{confirmPassword}}</p>
+
+    <button id="validate" type="submit" class="btn btn-outline-danger my-4 btn-lg py-3 text-uppercase w-50">Registrarme</button>
+
+</form>
